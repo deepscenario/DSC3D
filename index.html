@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description"
+          content="Highly Accurate and Diverse Traffic Data: The DeepScenario Open 3D Dataset.">
+    <meta name="keywords"
+          content="Trajectory, Dataset, DeepScenario, Open 3D Dataset, Traffic Data, Autonomous Driving">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Highly Accurate and Diverse Traffic Data: The DeepScenario Open 3D Dataset</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="icon" href="./static/images/favicon.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-1 publication-title">Highly Accurate and Diverse Traffic Data: The DeepScenario
+                        Open 3D Dataset</h1>
+                    <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a target="_blank"
+                 href="https://www.linkedin.com/in/oussema-dhaouadi/">Oussema Dhaouadi</a><sup>1,2,3*</sup>&nbsp;&nbsp;&nbsp;
+            </span>
+                        <span class="author-block">
+              <a target="_blank" href="https://www.linkedin.com/in/johannes-meier-52a159b4/">Johannes Meier</a><sup>1,2,3*</sup>&nbsp;&nbsp;&nbsp;</span>
+                        <span class="author-block">
+              <a target="_blank" href="https://www.linkedin.com/in/luca-wahl/">Luca Wahl</a><sup>1</sup>&nbsp;&nbsp;&nbsp;</span>
+                        <span class="author-block">
+              <a target="_blank" href="https://www.linkedin.com/in/jacqueskaiser/">Jacques Kaiser</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
+            </span>
+                        <span class="author-block">
+              <a target="_blank" href="https://www.linkedin.com/in/luca-scalerandi/">Luca Scalerandi</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
+            </span>
+                        <br>
+                        <span class="author-block">
+              <a target="_blank" href="https://www.linkedin.com/in/nickwandelburg/">Nick Wandelburg</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
+            </span>
+                        <span class="author-block">
+              <a target="_blank" href="https://www.linkedin.com/in/zhuolun-zhou/">Zhuolun Zhou</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
+            </span>
+                        <span class="author-block">
+              <a target="_blank"
+                 href="https://www.linkedin.com/in/nijanthan-b-064765137/">Nijanthan Berinpanathan</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
+            </span>
+                        <span class="author-block">
+              <a target="_blank"
+                 href="https://www.linkedin.com/in/holger-banzhaf-25226782/">Holger Banzhaf</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
+            </span>
+                        <span class="author-block">
+              <a target="_blank" href="https://cvg.cit.tum.de/members/cremers">Daniel Cremers</a><sup>2,3</sup>
+            </span>
+                    </div>
+
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block"><sup>1</sup> DeepScenario</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="author-block"><sup>2</sup> TUM</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="author-block"><sup>3</sup> MCML</span>
+                    </div>
+
+
+                    <div class="column has-text-centered">
+                        <div class="publication-links">
+                            <!-- PDF Link. -->
+                            <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+                            <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+                            <!-- Dataset Link. -->
+                            <span class="link-block">
+                <a href="https://app.deepscenario.com/"
+                   class="external-link button is-normal is-rounded is-dark" target="_blank">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+              </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero teaser">
+    <div class="container">
+        <div class="hero-body">
+            <img src="./static/images/Teaser.png" alt="Teaser Image" class="teaser-image">
+            <h2 class="subtitle has-text-centered">
+                We introduce the <span class="method">DeepScenario Open 3D Dataset (DSC3D)</span>,
+                a high-quality, occlusion-free dataset of <b>6 degrees of freedom</b> bounding box <b>trajectories</b>
+                acquired through a novel <b>monocular camera drone</b> tracking pipeline.
+            </h2>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        Accurate 3D trajectory data is crucial for advancing autonomous driving.
+                        Yet, traditional datasets are usually captured by fixed sensors mounted on a car
+                        and are susceptible to occlusion. Additionally, such an approach can precisely
+                        reconstruct the dynamic environment in the close vicinity of the measurement vehicle only,
+                        while neglecting objects that are further away.</p>
+
+                    <p>
+                        In this paper, we introduce the <span class="method">DeepScenario Open 3D Dataset (DSC3D)</span>,
+                        a high-quality, occlusion-free dataset of <b>6 degrees of freedom</b> bounding box <b>trajectories</b>
+                        acquired through a novel monocular camera drone tracking pipeline.
+                        Our dataset includes more than 175,000 trajectories of <b>14 types of traffic participants</b>
+                        and
+                        significantly exceeds existing datasets in terms of diversity and scale,
+                        containing many unprecedented scenarios such as complex vehicle-pedestrian
+                        interaction on highly populated urban streets and comprehensive parking maneuvers
+                        from entry to exit. DSC3D dataset was captured in five various locations in
+                        Europe and the United States and include: a parking lot, a crowded inner-city,
+                        a steep urban intersection, a federal highway, and a suburban intersection.
+                        Our 3D trajectory dataset aims to enhance autonomous driving systems by providing
+                        <b>detailed environmental 3D representations</b>, which could lead to improved obstacle
+                        interactions and safety. We demonstrate its utility across multiple
+                        applications including <b>motion prediction</b>, <b>motion planning</b>, <b>scenario mining</b>,
+                        and <b>generative reactive traffic agents</b>.
+                        Our interactive online visualization platform and the complete dataset are publicly available
+                        at <a href="https://app.deepscenario.com/" target="_blank">app.deepscenario.com</a>,
+                        facilitating research in motion prediction, behavior modeling, and safety validation.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--/ Abstract. -->
+
+    </div>
+</section>
+
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <h2 class="title is-3" style="text-align: center;">Video</h2>
+        <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/9xwazD5SyVg?rel=0&showinfo=0" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            Coming Soon
+        </div>
+        <br>
+
+        <div class="content has-text-justified">
+            <h2 class="title is-5">Description</h2>
+            <p>
+                <span class="method">DSC3D</span> counts about 15 hours of data across five different
+                locations in Germany and the United States, with a total of
+                177,151 unique trajectories. The dataset covers diverse scene
+                types including parking area (SIFI), inner-city environment (MUC), interesting non-signalized
+                intersections (STR, SFO), and federal highway (BER), capturing a wider range of
+                scenarios compared to specialized datasets that focus on
+                single environment types.<br>
+                The <span class="method">DSC3D</span> dataset presents the largest classification framework
+                of drone-based datasets including 14 separate categories.
+                The main categories consist of pedestrians (140,227),
+                bicycles (17,736), cars (13,241), scooters (1,475), motorcycles (1,054),
+                animals (677), trucks (475), buses (191), and
+                other (2,075). This detailed classification system allows researchers
+                to perform in-depth analysis of interactions among
+                various traffic participants.
+            </p>
+        </div>
+        <h2 class="title is-5">Download</h2>
+        <div class="content has-text-justified">
+            <ul>
+                <li>Download the dataset upon registration from <a
+                        href="https://app.deepscenario.com/">here</a>
+            </ul>
+        </div>
+
+        <h2 class="title is-5">License</h2>
+        <p xmlns:cc="http://creativecommons.org/ns#">
+            The <span class="method">DSC3D</span> dataset is licensed under <a
+                href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank"
+                rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img
+                style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img
+                style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img
+                style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img
+                style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a>
+        </p>
+    </div>
+</section>
+
+
+<section class="section" id="bibtex">
+    <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code id="bibtex_txt">@inproceedings{dsc3d,
+  title        = {Highly Accurate and Diverse Traffic Data: The DeepScenario Open 3D Dataset},
+  author       = {Dhaouadi,Oussema and Meier, Johannes and Wahl, Luca and Kaiser, Jacques and Scalerandi, Luca and Wandelburg, Nick and Zhuo, Zhuolun and Berinpanathan, Nijanthan and Banzhaf, Holger and Cremers, Daniel},
+  booktitle    = {2025 IEEE Intelligent Vehicles Symposium},
+  year         = {2025},
+  organization = {IEEE}
+}</code></pre>
+    </div>
+</section>
+
+<script
+        type="text/javascript">
+    document.getElementById("bibtex_txt").onclick = function () {
+        var range = document.createRange();
+        range.selectNode(document.getElementById("bibtex_txt"));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+    };
+</script>
+
+<footer class="footer">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content">
+
+                    <p>
+                        This page was built using the <a
+                            href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                            target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                            href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
